@@ -1,0 +1,10 @@
+To do list:
+
+
+Need to test 1 button without time.sleep for real time updates
+
+need to test 2 button setup
+
+need to find a way to end all threads when user exits
+
+     -- because issue of worker thread running after program has been closed.
