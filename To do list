@@ -3,7 +3,8 @@ To do list:
 
 Need to test 1 button without time.sleep for real time updates
 
-  --tested this and moved the code around but everytime time.sleep() i.e the time delay was removed, the gui would crash or would not get a response from the buttons
+  -- tested this and moved the code around but everytime time.sleep() i.e the time delay was removed, the gui would crash or would not get a response from the buttons
+  -- instead of while true loop, try a minuscule time delay such as .00001 seconds
 
 need to test 2 button setup
 
