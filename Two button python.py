@@ -116,11 +116,6 @@ class MainWindow(QMainWindow):
 
         self.threadpool = QThreadPool()
         print("Multithreading with maximum %d threads" % self.threadpool.maxThreadCount())
-
-        self.timer = QTimer()
-        self.timer.setInterval(1000)
-        self.timer.timeout.connect(self.recurring_timer)
-        self.timer.start()
     
     def progress_fn(self, button1_state, button2_state):
         
@@ -160,11 +155,7 @@ class MainWindow(QMainWindow):
         # Execute
         self.threadpool.start(worker) 
 
-        
-    def recurring_timer(self):
-        self.counter +=1
-#        self.l.setText("Counter: %d" % self.counter)
-    
+
     
 app = QApplication([])
 window = MainWindow()
