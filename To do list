@@ -3,8 +3,15 @@ To do list:
 
 Need to test 1 button without time.sleep for real time updates
 
+  --tested this and moved the code around but everytime time.sleep() i.e the time delay was removed, the gui would crash or would not get a response from the buttons
+
 need to test 2 button setup
 
 need to find a way to end all threads when user exits
 
-     -- because issue of worker thread running after program has been closed.
+     -- because issue of worker thread running after program has been closed. 
+     -- Temporary workaround for this has been using a time delay so that the thread only continues until the timer is finished.
+     
+     -- tried using a variable to determine whether the program had quit or not but this did not work.
+    
+   
